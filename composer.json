@@ -1,0 +1,23 @@
+{
+  "name": "somnambulist/laravel-environment-loader",
+  "type": "library",
+  "description": "Deferred loading / dev dependency loading for Laravel 5.X projects",
+  "keywords": [ "environment", "laravel", "service provider" ],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dave Redfern",
+      "email": "dave@scorpioframework.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Somnambulist\\EnvironmentLoader\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "laravel/framework": "5.*",
+  }
+}
