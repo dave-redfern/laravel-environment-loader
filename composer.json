@@ -3,7 +3,6 @@
   "type": "library",
   "description": "Deferred loading / dev dependency loading for Laravel 5.X projects",
   "keywords": [ "environment", "laravel", "service provider" ],
-  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
