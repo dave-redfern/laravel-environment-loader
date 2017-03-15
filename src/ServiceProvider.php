@@ -78,6 +78,8 @@ class ServiceProvider extends BaseServiceProvider
     {
         foreach ($this->getComponentsFromConfig($config, 'register', getenv('APP_ENV')) as $provider) {
             $this->app->register($provider);
+
+            $config->push('app.providers', $provider);
         }
     }
 
@@ -92,6 +94,8 @@ class ServiceProvider extends BaseServiceProvider
 
         foreach ($this->getComponentsFromConfig($config, 'facades', getenv('APP_ENV')) as $alias => $facade) {
             $loader->alias($alias, $facade);
+
+            $config->set('app.aliases.' . $alias, $facade);
         }
     }
 

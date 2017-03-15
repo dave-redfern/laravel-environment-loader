@@ -1,6 +1,14 @@
 Change Log
 ==========
 
+2017-03-15
+----------
+
+Changed:
+ 
+ * Fixed bug where environment loader does not provide config so config:cache will
+   be missing required providers.
+
 2017-02-03
 ----------
 
