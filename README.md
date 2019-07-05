@@ -1,3 +1,5 @@
+This project is no longer being maintained.
+
 ## Laravel Environment Loader
 
 Package for Laravel 5.X projects that allows loading providers based on environment
